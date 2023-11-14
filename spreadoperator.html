@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread operator</title>
+    <script>
+        let hustle = function(name,course,...args) {
+            document.write(`hello ${name} of ${course} : `);
+            let sum = 0;
+            for (let i in args) {
+                sum += args[i];
+            }
+            document.write(sum + "<br>");
+        }
+
+        var h = [10,10,10]
+        hustle("khush","btech",...h);    
+        // spread operator example
+
+        var a = [10,10,10];
+        var b = [100,100,100];
+        var c = [...a,...b];
+        console.log(c);
+        
+    //    spread opertaor same work as in object 
+
+         var obj1 = {
+            name : "khush"
+         };
+         var obj2 = {
+            class : 9
+         };
+
+         var obj3 = {...obj1,...obj2};
+         console.log(obj3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
