@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object literals in advance js</title>
+    <script>
+    // if your value declared before then you can do this according to ES6 
+        let name = "khush";
+        let course = "Btech";
+
+        var obj = {
+            // name : name,
+            // course : course,
+            name,
+            course
+            
+        };
+
+        console.log(obj);
+
+        // if you previously declared key value
+        let n = "name";
+
+        var obj1 = {
+            [n] : "khush",
+            class : "btech"
+
+
+        }
+        console.log(obj1);
+
+        let k = "student";
+        var obj3 = {
+            [k + "name"] : "khushdeep",
+            class : "Medical",
+            detail : function() {
+                return `${this.studentname} is student of ${this.class}`;
+            }
+
+        };
+        console.log(obj3.studentname);
+        console.log(obj3.detail());
+
+      // new way in ES6
+      let fname = "khushdeepkumar";
+      let lname = "Ronaldofan";
+
+      function football(fname,lname) {
+        return {fname,lname};
+      };
+        console.log(football(fname,lname));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
