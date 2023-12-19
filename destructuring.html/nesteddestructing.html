@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring of an array</title>
+    <script>
+        let user = ["Khushdeep",24,"Btech",["male",26452]];
+        let [name,age=24,Course,[gender,salary]] = user;
+
+        console.log(name);
+        console.log(age);
+        console.log(Course);
+        console.log(gender);
+        console.log(salary);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
