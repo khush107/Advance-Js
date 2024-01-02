@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oop constructor,statice etc</title>
+    <script>
+        
+        class student{
+            constructor(name, age){                            
+                // constructor function example
+                this.st = name;
+                this.sa = age;
+                console.log("constructor function");
+            }
+            hello(){
+                // prototype function example 
+                document.write(`hello ${this.st} and my age is ${this.sa}`);
+            }
+
+            static staticfunction(){
+                console.log("static function");
+            }
+        }
+
+        let a = new student("Khush", 24);
+        // let b = new student("Rohit", 22);
+
+        a.hello();
+        // b.hello();
+        student.staticfunction();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
