@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance oops</title>
+    <script>
+        class employee {
+            constructor(name){
+             console.log("Constructor : Employee" + name);
+            }
+        }
+
+        class manager extends employee{
+            constructor(name){
+                super();
+                console.log("constructor : manager" + name);
+            }
+        }
+
+        let a = new manager ("khush");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
