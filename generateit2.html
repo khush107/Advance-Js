@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generators by Spread Operator</title>
+    <script>
+        function* generateit() {
+            yield "madrid";
+            yield "paris";
+            yield "london";
+            yield "tokyo";
+        }
+
+        let g = generateit();
+        console.log(g.next().value);
+        console.log([...g]);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
