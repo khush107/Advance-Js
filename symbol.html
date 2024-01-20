@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>symbols in js</title>
+    <script>
+        let hello = Symbol("hello");
+        let y = Symbol("hello");
+        console.log(hello.description)
+        console.log(hello==y);
+        // alert(y.toString());
+
+        let user = {
+            name:"khush",
+            class:"btech",
+            };
+
+            user[hello] = 24;
+            user[hello] = "male";
+
+            // console.log(user);
+            // console.log(user[x]);      <=    this is how you print symbol
+          for(let key in user){
+            console.log(key);
+          };
+
+          console.log(JSON.stringify(user));
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
