@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>generators in js with loops</title>
+    <script>
+        // function* generateit() {
+        //     let nextnum = 300;
+        //     while (true) {
+        //         yield (nextnum++);
+        //     }
+        // }
+
+        // let g = generateit();
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+        // console.log(g.next().value);
+
+        function* generateit() {
+            yield 45;
+            yield* ["london", "paris", "chicago"];
+        }
+
+        let g = generateit();
+        console.log(g.next().value);
+        console.log(g.next().value);
+        console.log(g.next().value);
+        console.log(g.next().value);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
