@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generators injs</title>
+    <script>
+        // function *generateit() {
+        //     console.log("first");
+        //     yield "message 1";
+        //     console.log("second");
+        //     yield "message 2";
+        //     console.log("third");
+        //     yield "messsage 3";
+        // }
+
+        // let g = generateit();
+        // console.log(g.next());
+        // console.log(g.next().value);
+        // console.log(g.next());
+        // console.log(g.next());
+
+        function *generateit() {
+           
+            yield "message 1";
+            
+            yield "message 2";
+           
+            yield "message 3";
+        }
+
+        let g = generateit();
+        console.log(g.next());
+        console.log(g.next());
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
